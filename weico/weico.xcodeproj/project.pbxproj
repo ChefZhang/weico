@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5260612D1CAF99AB00CEA65A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260612C1CAF99AB00CEA65A /* AppDelegate.swift */; };
+		526061341CAF99AB00CEA65A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526061331CAF99AB00CEA65A /* Assets.xcassets */; };
+		526061371CAF99AB00CEA65A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526061351CAF99AB00CEA65A /* LaunchScreen.storyboard */; };
+		526061451CAF9B5800CEA65A /* CZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526061441CAF9B5800CEA65A /* CZMainViewController.swift */; };
+		526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526061461CAF9BD200CEA65A /* CZHomeViewController.swift */; };
+		526061491CAF9BDC00CEA65A /* CZMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526061481CAF9BDC00CEA65A /* CZMessageViewController.swift */; };
+		5260614B1CAF9BE500CEA65A /* CZDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260614A1CAF9BE500CEA65A /* CZDiscoverViewController.swift */; };
+		5260614D1CAF9BED00CEA65A /* CZProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260614C1CAF9BED00CEA65A /* CZProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		526061291CAF99AB00CEA65A /* weico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5260612C1CAF99AB00CEA65A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		526061331CAF99AB00CEA65A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		526061361CAF99AB00CEA65A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		526061381CAF99AB00CEA65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526061441CAF9B5800CEA65A /* CZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZMainViewController.swift; sourceTree = "<group>"; };
+		526061461CAF9BD200CEA65A /* CZHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZHomeViewController.swift; sourceTree = "<group>"; };
+		526061481CAF9BDC00CEA65A /* CZMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZMessageViewController.swift; sourceTree = "<group>"; };
+		5260614A1CAF9BE500CEA65A /* CZDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZDiscoverViewController.swift; sourceTree = "<group>"; };
+		5260614C1CAF9BED00CEA65A /* CZProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		526061261CAF99AB00CEA65A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		526061201CAF99AB00CEA65A = {
+			isa = PBXGroup;
+			children = (
+				5260612B1CAF99AB00CEA65A /* weico */,
+				5260612A1CAF99AB00CEA65A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5260612A1CAF99AB00CEA65A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				526061291CAF99AB00CEA65A /* weico.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5260612B1CAF99AB00CEA65A /* weico */ = {
+			isa = PBXGroup;
+			children = (
+				5260613E1CAF9AC500CEA65A /* Classes */,
+				5260612C1CAF99AB00CEA65A /* AppDelegate.swift */,
+				526061331CAF99AB00CEA65A /* Assets.xcassets */,
+				526061351CAF99AB00CEA65A /* LaunchScreen.storyboard */,
+				526061381CAF99AB00CEA65A /* Info.plist */,
+			);
+			path = weico;
+			sourceTree = "<group>";
+		};
+		5260613E1CAF9AC500CEA65A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				526061411CAF9AC500CEA65A /* Main */,
+				526061401CAF9AC500CEA65A /* Home */,
+				526061421CAF9AC500CEA65A /* Message */,
+				5260613F1CAF9AC500CEA65A /* Discover */,
+				526061431CAF9AC500CEA65A /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5260613F1CAF9AC500CEA65A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				5260614A1CAF9BE500CEA65A /* CZDiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		526061401CAF9AC500CEA65A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				526061461CAF9BD200CEA65A /* CZHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		526061411CAF9AC500CEA65A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				526061441CAF9B5800CEA65A /* CZMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		526061421CAF9AC500CEA65A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				526061481CAF9BDC00CEA65A /* CZMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		526061431CAF9AC500CEA65A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5260614C1CAF9BED00CEA65A /* CZProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		526061281CAF99AB00CEA65A /* weico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5260613B1CAF99AB00CEA65A /* Build configuration list for PBXNativeTarget "weico" */;
+			buildPhases = (
+				526061251CAF99AB00CEA65A /* Sources */,
+				526061261CAF99AB00CEA65A /* Frameworks */,
+				526061271CAF99AB00CEA65A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weico;
+			productName = weico;
+			productReference = 526061291CAF99AB00CEA65A /* weico.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		526061211CAF99AB00CEA65A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CZ;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = JohnZhang;
+				TargetAttributes = {
+					526061281CAF99AB00CEA65A = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4SB9D785Z8;
+					};
+				};
+			};
+			buildConfigurationList = 526061241CAF99AB00CEA65A /* Build configuration list for PBXProject "weico" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 526061201CAF99AB00CEA65A;
+			productRefGroup = 5260612A1CAF99AB00CEA65A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				526061281CAF99AB00CEA65A /* weico */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		526061271CAF99AB00CEA65A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526061371CAF99AB00CEA65A /* LaunchScreen.storyboard in Resources */,
+				526061341CAF99AB00CEA65A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		526061251CAF99AB00CEA65A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526061451CAF9B5800CEA65A /* CZMainViewController.swift in Sources */,
+				526061491CAF9BDC00CEA65A /* CZMessageViewController.swift in Sources */,
+				5260612D1CAF99AB00CEA65A /* AppDelegate.swift in Sources */,
+				526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */,
+				5260614B1CAF9BE500CEA65A /* CZDiscoverViewController.swift in Sources */,
+				5260614D1CAF9BED00CEA65A /* CZProfileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		526061351CAF99AB00CEA65A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				526061361CAF99AB00CEA65A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		526061391CAF99AB00CEA65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5260613A1CAF99AB00CEA65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5260613C1CAF99AB00CEA65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = weico/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captainZhu.weico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5260613D1CAF99AB00CEA65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = weico/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.captainZhu.weico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		526061241CAF99AB00CEA65A /* Build configuration list for PBXProject "weico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				526061391CAF99AB00CEA65A /* Debug */,
+				5260613A1CAF99AB00CEA65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5260613B1CAF99AB00CEA65A /* Build configuration list for PBXNativeTarget "weico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5260613C1CAF99AB00CEA65A /* Debug */,
+				5260613D1CAF99AB00CEA65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 526061211CAF99AB00CEA65A /* Project object */;
+}
