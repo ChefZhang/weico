@@ -10,50 +10,43 @@ import UIKit
 
 class CZMainViewController: UITabBarController {
 
+    // MARK:- 懒加载   懒加载一定要用var
+//    private lazy var publishBtn = UIButton()
+//    private lazy var publishBtn = UIButton.createBtn("tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
+    private lazy var publishBtn = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        // 系统自带
-//        addChildViewController(CZHomeViewController())
-//        addChildViewController(CZMessageViewController())
-//        addChildViewController(CZDiscoverViewController())
-//        addChildViewController(CZProfileViewController())
         
-        // 函数重载
-        addChildViewController(CZHomeViewController(), title: "首页", imageName: "tabbar_home")
-        addChildViewController(CZMessageViewController(), title: "消息", imageName: "tabbar_message_center")
-        addChildViewController(CZDiscoverViewController(), title: "发现", imageName: "tabbar_discover")
-        addChildViewController(CZProfileViewController(), title: "我", imageName: "tabbar_profile")
+        setupPublishBtn()
     }
-
-    // private在当前文件中可以访问,但是其他文件不能访问
-
-    private func addChildViewController(childController: UIViewController, title: String, imageName: String) {
-        // 1.设置子控制器的属性
-        childController.title = title
-        childController.tabBarItem.image = UIImage(named: imageName)
-        childController.tabBarItem.selectedImage = UIImage(named: imageName + "_highlighted")
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
-        // 因为微博全是橘黄色,所以我为了偷懒,就用了AppDelegate里面的tabBarApperance设置了全局都是橘黄色
-        // 想要自己设置,就用下面的
+        for i in 0..<tabBar.items!.count {
+            
+            let item = tabBar.items![i]
+            
+            if i == 2 {
+                item.enabled = false
+            }
+        }
         
+    }
+}
 
-        /*
-        var image = UIImage(named: imageName)
-        image = image?.imageWithRenderingMode( .AlwaysOriginal)
-        childController.tabBarItem.image = image
-        var selectedImage = UIImage(named: imageName + "_highlighted")
-        selectedImage = selectedImage?.imageWithRenderingMode( .AlwaysOriginal)
-        childController.tabBarItem.selectedImage = selectedImage
-        */
-
-
-        // 2.包装导航控制器
-        let childNav = UINavigationController(rootViewController: childController)
+extension CZMainViewController {
+    @objc private func setupPublishBtn() {
+        tabBar.addSubview(publishBtn)
         
-        // 3.添加导航控制器
-        addChildViewController(childNav)
+//        publishBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState: .Normal)
+//        publishBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: .Highlighted)
+//        publishBtn.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: .Normal)
+//        publishBtn.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: .Highlighted)
+        
+        
+        publishBtn.center = CGPointMake(tabBar.center.x, tabBar.bounds.size.height * 0.5)
     }
 }

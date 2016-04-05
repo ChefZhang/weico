@@ -9,25 +9,37 @@
 /* Begin PBXBuildFile section */
 		5260612D1CAF99AB00CEA65A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260612C1CAF99AB00CEA65A /* AppDelegate.swift */; };
 		526061341CAF99AB00CEA65A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526061331CAF99AB00CEA65A /* Assets.xcassets */; };
-		526061371CAF99AB00CEA65A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526061351CAF99AB00CEA65A /* LaunchScreen.storyboard */; };
 		526061451CAF9B5800CEA65A /* CZMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526061441CAF9B5800CEA65A /* CZMainViewController.swift */; };
 		526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526061461CAF9BD200CEA65A /* CZHomeViewController.swift */; };
 		526061491CAF9BDC00CEA65A /* CZMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526061481CAF9BDC00CEA65A /* CZMessageViewController.swift */; };
 		5260614B1CAF9BE500CEA65A /* CZDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260614A1CAF9BE500CEA65A /* CZDiscoverViewController.swift */; };
 		5260614D1CAF9BED00CEA65A /* CZProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260614C1CAF9BED00CEA65A /* CZProfileViewController.swift */; };
+		52EA47B11CB3DC88005D6432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47AF1CB3DC88005D6432 /* Main.storyboard */; };
+		52EA47B31CB3DC93005D6432 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47B21CB3DC93005D6432 /* Home.storyboard */; };
+		52EA47B61CB3DCBE005D6432 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47B41CB3DCBE005D6432 /* Message.storyboard */; };
+		52EA47BB1CB3DD51005D6432 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47B91CB3DD51005D6432 /* Discover.storyboard */; };
+		52EA47BF1CB3DDB2005D6432 /* null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47BE1CB3DDB2005D6432 /* null.storyboard */; };
+		52EA47C11CB3DDB9005D6432 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47C01CB3DDB9005D6432 /* Profile.storyboard */; };
+		52EA47C51CB3E4D6005D6432 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA47C41CB3E4D6005D6432 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		526061291CAF99AB00CEA65A /* weico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5260612C1CAF99AB00CEA65A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526061331CAF99AB00CEA65A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		526061361CAF99AB00CEA65A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526061381CAF99AB00CEA65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526061441CAF9B5800CEA65A /* CZMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZMainViewController.swift; sourceTree = "<group>"; };
 		526061461CAF9BD200CEA65A /* CZHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZHomeViewController.swift; sourceTree = "<group>"; };
 		526061481CAF9BDC00CEA65A /* CZMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZMessageViewController.swift; sourceTree = "<group>"; };
 		5260614A1CAF9BE500CEA65A /* CZDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZDiscoverViewController.swift; sourceTree = "<group>"; };
 		5260614C1CAF9BED00CEA65A /* CZProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZProfileViewController.swift; sourceTree = "<group>"; };
+		52EA47B01CB3DC88005D6432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52EA47B21CB3DC93005D6432 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		52EA47B51CB3DCBE005D6432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
+		52EA47BA1CB3DD51005D6432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		52EA47BE1CB3DDB2005D6432 /* null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = null.storyboard; sourceTree = "<group>"; };
+		52EA47C01CB3DDB9005D6432 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		52EA47C41CB3E4D6005D6432 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +74,8 @@
 			children = (
 				5260613E1CAF9AC500CEA65A /* Classes */,
 				5260612C1CAF99AB00CEA65A /* AppDelegate.swift */,
+				52EA47AF1CB3DC88005D6432 /* Main.storyboard */,
 				526061331CAF99AB00CEA65A /* Assets.xcassets */,
-				526061351CAF99AB00CEA65A /* LaunchScreen.storyboard */,
 				526061381CAF99AB00CEA65A /* Info.plist */,
 			);
 			path = weico;
@@ -77,6 +89,7 @@
 				526061421CAF9AC500CEA65A /* Message */,
 				5260613F1CAF9AC500CEA65A /* Discover */,
 				526061431CAF9AC500CEA65A /* Profile */,
+				52EA47C21CB3E49E005D6432 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -84,6 +97,7 @@
 		5260613F1CAF9AC500CEA65A /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				52EA47B91CB3DD51005D6432 /* Discover.storyboard */,
 				5260614A1CAF9BE500CEA65A /* CZDiscoverViewController.swift */,
 			);
 			path = Discover;
@@ -92,6 +106,7 @@
 		526061401CAF9AC500CEA65A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				52EA47B21CB3DC93005D6432 /* Home.storyboard */,
 				526061461CAF9BD200CEA65A /* CZHomeViewController.swift */,
 			);
 			path = Home;
@@ -100,6 +115,7 @@
 		526061411CAF9AC500CEA65A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				52EA47BE1CB3DDB2005D6432 /* null.storyboard */,
 				526061441CAF9B5800CEA65A /* CZMainViewController.swift */,
 			);
 			path = Main;
@@ -108,6 +124,7 @@
 		526061421CAF9AC500CEA65A /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				52EA47B41CB3DCBE005D6432 /* Message.storyboard */,
 				526061481CAF9BDC00CEA65A /* CZMessageViewController.swift */,
 			);
 			path = Message;
@@ -116,9 +133,26 @@
 		526061431CAF9AC500CEA65A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				52EA47C01CB3DDB9005D6432 /* Profile.storyboard */,
 				5260614C1CAF9BED00CEA65A /* CZProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		52EA47C21CB3E49E005D6432 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				52EA47C31CB3E4B7005D6432 /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		52EA47C31CB3E4B7005D6432 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				52EA47C41CB3E4D6005D6432 /* UIButton+Extension.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +215,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526061371CAF99AB00CEA65A /* LaunchScreen.storyboard in Resources */,
+				52EA47B11CB3DC88005D6432 /* Main.storyboard in Resources */,
+				52EA47BF1CB3DDB2005D6432 /* null.storyboard in Resources */,
+				52EA47C11CB3DDB9005D6432 /* Profile.storyboard in Resources */,
+				52EA47B61CB3DCBE005D6432 /* Message.storyboard in Resources */,
 				526061341CAF99AB00CEA65A /* Assets.xcassets in Resources */,
+				52EA47BB1CB3DD51005D6432 /* Discover.storyboard in Resources */,
+				52EA47B31CB3DC93005D6432 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,18 +238,37 @@
 				526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */,
 				5260614B1CAF9BE500CEA65A /* CZDiscoverViewController.swift in Sources */,
 				5260614D1CAF9BED00CEA65A /* CZProfileViewController.swift in Sources */,
+				52EA47C51CB3E4D6005D6432 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		526061351CAF99AB00CEA65A /* LaunchScreen.storyboard */ = {
+		52EA47AF1CB3DC88005D6432 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				526061361CAF99AB00CEA65A /* Base */,
+				52EA47B01CB3DC88005D6432 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52EA47B41CB3DCBE005D6432 /* Message.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52EA47B51CB3DCBE005D6432 /* Base */,
+			);
+			name = Message.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		52EA47B91CB3DD51005D6432 /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52EA47BA1CB3DD51005D6432 /* Base */,
+			);
+			name = Discover.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,6 +400,7 @@
 				5260613D1CAF99AB00CEA65A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
