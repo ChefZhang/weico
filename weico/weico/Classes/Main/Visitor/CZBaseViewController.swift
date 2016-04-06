@@ -45,6 +45,7 @@ extension CZBaseViewController {
     private func setupNavigationItems() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .Plain, target: self, action: "registerBtnClick")
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .Plain, target: self, action: "loginBtnClick")
+        
     }
 }
 
