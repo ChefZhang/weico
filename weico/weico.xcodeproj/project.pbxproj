@@ -26,6 +26,10 @@
 		52F82FB61CB404DD00853660 /* CZVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F82FB51CB404DD00853660 /* CZVisitorView.xib */; };
 		52F8300D1CB4E22200853660 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8300C1CB4E22200853660 /* UIBarButtonItem.swift */; };
 		52F8300F1CB4EF8400853660 /* CZTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8300E1CB4EF8400853660 /* CZTitleButton.swift */; };
+		52F830171CB521F500853660 /* CZPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F830151CB521F500853660 /* CZPopoverViewController.swift */; };
+		52F830181CB521F500853660 /* CZPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F830161CB521F500853660 /* CZPopoverViewController.xib */; };
+		52F8301A1CB52DF500853660 /* CZPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F830191CB52DF500853660 /* CZPresentationController.swift */; };
+		52F8301C1CB5683100853660 /* CZPopoverAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8301B1CB5683100853660 /* CZPopoverAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		52F82FB51CB404DD00853660 /* CZVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZVisitorView.xib; sourceTree = "<group>"; };
 		52F8300C1CB4E22200853660 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
 		52F8300E1CB4EF8400853660 /* CZTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZTitleButton.swift; sourceTree = "<group>"; };
+		52F830151CB521F500853660 /* CZPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZPopoverViewController.swift; sourceTree = "<group>"; };
+		52F830161CB521F500853660 /* CZPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZPopoverViewController.xib; sourceTree = "<group>"; };
+		52F830191CB52DF500853660 /* CZPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZPresentationController.swift; sourceTree = "<group>"; };
+		52F8301B1CB5683100853660 /* CZPopoverAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZPopoverAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +124,7 @@
 		526061401CAF9AC500CEA65A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				52F830141CB521C500853660 /* Popover */,
 				52EA47B21CB3DC93005D6432 /* Home.storyboard */,
 				526061461CAF9BD200CEA65A /* CZHomeViewController.swift */,
 			);
@@ -176,6 +185,17 @@
 				52F82FB51CB404DD00853660 /* CZVisitorView.xib */,
 			);
 			path = Visitor;
+			sourceTree = "<group>";
+		};
+		52F830141CB521C500853660 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				52F830161CB521F500853660 /* CZPopoverViewController.xib */,
+				52F830151CB521F500853660 /* CZPopoverViewController.swift */,
+				52F830191CB52DF500853660 /* CZPresentationController.swift */,
+				52F8301B1CB5683100853660 /* CZPopoverAnimation.swift */,
+			);
+			path = Popover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +265,7 @@
 				52EA47B61CB3DCBE005D6432 /* Message.storyboard in Resources */,
 				526061341CAF99AB00CEA65A /* Assets.xcassets in Resources */,
 				52EA47BB1CB3DD51005D6432 /* Discover.storyboard in Resources */,
+				52F830181CB521F500853660 /* CZPopoverViewController.xib in Resources */,
 				52EA47B31CB3DC93005D6432 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,10 +280,13 @@
 				526061451CAF9B5800CEA65A /* CZMainViewController.swift in Sources */,
 				526061491CAF9BDC00CEA65A /* CZMessageViewController.swift in Sources */,
 				5260612D1CAF99AB00CEA65A /* AppDelegate.swift in Sources */,
+				52F830171CB521F500853660 /* CZPopoverViewController.swift in Sources */,
 				526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */,
+				52F8301A1CB52DF500853660 /* CZPresentationController.swift in Sources */,
 				52F82FB21CB4030100853660 /* CZBaseViewController.swift in Sources */,
 				5260614B1CAF9BE500CEA65A /* CZDiscoverViewController.swift in Sources */,
 				52F8300F1CB4EF8400853660 /* CZTitleButton.swift in Sources */,
+				52F8301C1CB5683100853660 /* CZPopoverAnimation.swift in Sources */,
 				52F8300D1CB4E22200853660 /* UIBarButtonItem.swift in Sources */,
 				5260614D1CAF9BED00CEA65A /* CZProfileViewController.swift in Sources */,
 				52EA47C51CB3E4D6005D6432 /* UIButton+Extension.swift in Sources */,

@@ -10,8 +10,10 @@ import UIKit
 
 class CZHomeViewController: CZBaseViewController {
 
+    
     // MARK:- 懒加载
     lazy private var titleBtn: CZTitleButton = CZTitleButton()
+    lazy private var popoverAnimation: CZPopoverAnimation = CZPopoverAnimation()
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -64,5 +66,22 @@ extension CZHomeViewController {
     
     @objc private func titleBtnClick(titleBtn : CZTitleButton) {
         titleBtn.selected = !titleBtn.selected
+        
+        let popoverVc = CZPopoverViewController()
+        // 设置modal的样式,如果不设置的话,就会遮盖住首页中tableview的内容
+        popoverVc.modalPresentationStyle = .Custom
+        
+        // 设置转场动画的代理
+        popoverVc.transitioningDelegate = popoverAnimation
+        
+        presentViewController(popoverVc, animated: true, completion: nil)
+
     }
 }
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CZPopoverViewController" customModule="weico" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="a2Y-d2-eAo" id="ckj-WW-y2c"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="417"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popover_background" translatesAutoresizingMaskIntoConstraints="NO" id="bq4-DC-CDb">
+                    <rect key="frame" x="0.0" y="0.0" width="271" height="417"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a2Y-d2-eAo">
+                    <rect key="frame" x="10" y="15" width="251" height="392"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bq4-DC-CDb" secondAttribute="bottom" id="07P-dZ-EfT"/>
+                <constraint firstItem="bq4-DC-CDb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F0f-K5-pi3"/>
+                <constraint firstAttribute="trailing" secondItem="bq4-DC-CDb" secondAttribute="trailing" id="FRi-67-LUp"/>
+                <constraint firstItem="bq4-DC-CDb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NxS-q5-SKb"/>
+                <constraint firstAttribute="trailing" secondItem="a2Y-d2-eAo" secondAttribute="trailing" constant="10" id="a3X-Re-ptE"/>
+                <constraint firstItem="a2Y-d2-eAo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="gbT-nf-Viq"/>
+                <constraint firstAttribute="bottom" secondItem="a2Y-d2-eAo" secondAttribute="bottom" constant="10" id="iMV-8x-jeK"/>
+                <constraint firstItem="a2Y-d2-eAo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="vHC-36-fan"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="145.5" y="522.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popover_background" width="217" height="49"/>
+    </resources>
+</document>

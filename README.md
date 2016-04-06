@@ -1,10 +1,12 @@
 # weico
 swift weibo
 
-**注意:好像只有iOS9.0开始才有**
+
 
 
 有些不少歪果仁团队,会用storyboard创建视图,国内会有不少人觉得不好用,觉得层次不够清晰,那么,就用实际效果看看如何吧
+
+**注意:只有iOS9.0开始才有storyboard的这种引用**
 
 1.创建tabBarController,并创建相应的navigationController,将每个navigationController作为一个类似索引的操作
 
@@ -21,3 +23,5 @@ swift weibo
 
 
 ![最后.png](http://upload-images.jianshu.io/upload_images/328309-b4efdc5644a77b53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
