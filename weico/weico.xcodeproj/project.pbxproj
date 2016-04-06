@@ -24,6 +24,8 @@
 		52F82FB21CB4030100853660 /* CZBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F82FB11CB4030100853660 /* CZBaseViewController.swift */; };
 		52F82FB41CB404CD00853660 /* CZVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F82FB31CB404CD00853660 /* CZVisitorView.swift */; };
 		52F82FB61CB404DD00853660 /* CZVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F82FB51CB404DD00853660 /* CZVisitorView.xib */; };
+		52F8300D1CB4E22200853660 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8300C1CB4E22200853660 /* UIBarButtonItem.swift */; };
+		52F8300F1CB4EF8400853660 /* CZTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8300E1CB4EF8400853660 /* CZTitleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		52F82FB11CB4030100853660 /* CZBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZBaseViewController.swift; sourceTree = "<group>"; };
 		52F82FB31CB404CD00853660 /* CZVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZVisitorView.swift; sourceTree = "<group>"; };
 		52F82FB51CB404DD00853660 /* CZVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZVisitorView.xib; sourceTree = "<group>"; };
+		52F8300C1CB4E22200853660 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		52F8300E1CB4EF8400853660 /* CZTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZTitleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				52EA47C31CB3E4B7005D6432 /* Category */,
+				52F8300E1CB4EF8400853660 /* CZTitleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				52EA47C41CB3E4D6005D6432 /* UIButton+Extension.swift */,
+				52F8300C1CB4E22200853660 /* UIBarButtonItem.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 				526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */,
 				52F82FB21CB4030100853660 /* CZBaseViewController.swift in Sources */,
 				5260614B1CAF9BE500CEA65A /* CZDiscoverViewController.swift in Sources */,
+				52F8300F1CB4EF8400853660 /* CZTitleButton.swift in Sources */,
+				52F8300D1CB4E22200853660 /* UIBarButtonItem.swift in Sources */,
 				5260614D1CAF9BED00CEA65A /* CZProfileViewController.swift in Sources */,
 				52EA47C51CB3E4D6005D6432 /* UIButton+Extension.swift in Sources */,
 				52F82FB41CB404CD00853660 /* CZVisitorView.swift in Sources */,

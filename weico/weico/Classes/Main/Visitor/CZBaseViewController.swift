@@ -14,11 +14,11 @@ class CZBaseViewController: UITableViewController {
     lazy var visitorView: CZVisitorView = CZVisitorView.visitorView()
     
     // MARK: - 默认为未登录状态
-    var isLogin = false
+    var isLogin : Bool = true
     
     // MARK: - 系统回调函数,判断加载哪个界面
     override func loadView() {
-        isLogin ? loadView() : setupVisitorView()
+        isLogin ? super.loadView() : setupVisitorView()
     }
     
     override func viewDidLoad() {
@@ -34,6 +34,7 @@ class CZBaseViewController: UITableViewController {
 
 // MARK:- 设置访客界面
 extension CZBaseViewController {
+    
     private func setupVisitorView() {
         view = visitorView
         

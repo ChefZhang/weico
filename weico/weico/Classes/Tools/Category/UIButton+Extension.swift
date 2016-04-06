@@ -26,7 +26,7 @@ extension UIButton {
         return btn
     }
     
-    // convenience : 便利,使用convenience修饰的构造函数叫做便利构造函数
+
     // 遍历构造函数通常用在对系统的类进行构造函数的扩充时使用
     /*
     遍历构造函数的特点
@@ -44,6 +44,14 @@ extension UIButton {
         sizeToFit()
     }
     
+    
+    convenience init(imageName: String) {
+        self.init()
+        
+        setImage(UIImage(named: imageName), forState: .Normal)
+        setImage(UIImage(named: imageName + "_highlighted"), forState: .Selected)
+        sizeToFit()
+    }
 }
 
 
