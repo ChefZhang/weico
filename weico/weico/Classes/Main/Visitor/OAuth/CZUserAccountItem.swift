@@ -49,7 +49,7 @@ class CZUserAccountItem: NSObject {
     
     // 重写description属性,不然只能打印地址
     override var description: String {
-        return dictionaryWithValuesForKeys(["access_token", "expires_date", "uid"]).description
+        return dictionaryWithValuesForKeys(["access_token", "expires_date", "uid", "screen_name", "avatar_large"]).description
     }
     
 }
