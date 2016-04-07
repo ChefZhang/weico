@@ -97,7 +97,7 @@
         </view>
     </objects>
     <resources>
-        <image name="common_button_white_disable" width="11" height="35"/>
+        <image name="common_button_white_disable" width="11" height="9"/>
         <image name="visitordiscover_feed_image_house" width="94" height="90"/>
         <image name="visitordiscover_feed_image_smallicon" width="175" height="175"/>
         <image name="visitordiscover_feed_mask_smallicon" width="175" height="175"/>

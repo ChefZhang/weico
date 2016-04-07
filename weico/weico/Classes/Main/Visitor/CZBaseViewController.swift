@@ -14,7 +14,7 @@ class CZBaseViewController: UITableViewController {
     lazy var visitorView: CZVisitorView = CZVisitorView.visitorView()
     
     // MARK: - 默认为未登录状态
-    var isLogin : Bool = true
+    var isLogin : Bool = false
     
     // MARK: - 系统回调函数,判断加载哪个界面
     override func loadView() {
@@ -59,7 +59,12 @@ extension CZBaseViewController {
     }
     
     @objc private func loginBtnClick() {
-        print("loginBtnClick")
+        let oauthVC = CZOAuthViewController()
+        
+        let oauthNav = UINavigationController(rootViewController: oauthVC)
+        
+        presentViewController(oauthNav, animated: true, completion: nil)
+        
     }
 }
 
