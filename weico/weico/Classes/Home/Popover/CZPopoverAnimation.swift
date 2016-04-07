@@ -10,6 +10,22 @@ import UIKit
 
 class CZPopoverAnimation: NSObject {
 
+    // MARK: - 用于接收外界传入的frame
+    var presentedFrame: CGRect = CGRectZero
+    
+    // MARK: - 传递presented状态
+    var callBack: ((presentedState: Bool)->())?
+    
+    
+    // 这段不要删,当然删也是没有问题的,但是如果自定义了一个构造函数,但是没有对默认构造函数init()进行重写,那么自定义的构造函数会覆盖默认的init()构造函数
+    override init() {
+    
+    }
+    
+    init(callBack: (presentedState: Bool)->()) {
+        self.callBack = callBack
+    }
+    
     // MARK: -判断是否有modal的视图
     private var isPresented: Bool = false
 }
@@ -23,7 +39,10 @@ extension CZPopoverAnimation : UIViewControllerTransitioningDelegate {
         //        return UIPresentationController(presentedViewController: presented, presentingViewController: presenting)
         
         // 这里我是要自定义的
-        return CZPresentationController(presentedViewController: presented, presentingViewController: presenting)
+        let presentationController = CZPresentationController(presentedViewController: presented, presentingViewController: presenting)
+        presentationController.presentViewFrame = presentedFrame
+        
+        return presentationController
     }
 }
 
@@ -34,12 +53,20 @@ extension CZPopoverAnimation: UIViewControllerAnimatedTransitioning {
     // 自定义弹出的动画,自定义动画后,就要自己设置控制器的出现了,以下两个就是用来设置的
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresented = true
+        
+        // 传递给外界状态
+        callBack!(presentedState: isPresented)
+        
         return self
     }
     
     // 自定义消失的动画
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresented = false
+        
+        // 传递给外界状态
+        callBack!(presentedState: isPresented)
+        
         return self
     }
     

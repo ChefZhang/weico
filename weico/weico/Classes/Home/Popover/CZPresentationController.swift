@@ -10,6 +10,9 @@ import UIKit
 
 class CZPresentationController: UIPresentationController {
 
+    // MARK: - 用于接收外界传入的frame
+    var presentViewFrame: CGRect = CGRectZero
+    
     // MARK: - 懒加载
     lazy private var coverView = UIView()
     
@@ -17,7 +20,7 @@ class CZPresentationController: UIPresentationController {
     override func containerViewWillLayoutSubviews() {
         super.containerViewWillLayoutSubviews()
         
-        presentedView()?.frame = CGRectMake(20, 55, 150, 250)
+        presentedView()?.frame = presentViewFrame
         presentedView()?.center.x = UIScreen.mainScreen().bounds.size.width * 0.5
         
         
