@@ -67,14 +67,11 @@ extension CZNetworkTools {
 
 // MARK:- 请求用户的信息
 extension CZNetworkTools {
-    func loadUserInfo(access_token : String, uid : String, finished : (result : [String : AnyObject]?, error : NSError?) -> ()) {
-        // 1.获取请求的URLString
+    func loadUserInfomation(access_token : String, uid : String, finished : (result : [String : AnyObject]?, error : NSError?) -> ()) {
         let urlString = "https://api.weibo.com/2/users/show.json"
         
-        // 2.获取请求的参数
         let parameters = ["access_token" : access_token, "uid" : uid]
         
-        // 3.发送网络请求
         request(.GET, urlString: urlString, parameters: parameters) { (result, error) -> () in
             finished(result: result as? [String : AnyObject] , error: error)
         }

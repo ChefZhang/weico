@@ -14,10 +14,13 @@ class CZBaseViewController: UITableViewController {
     lazy var visitorView: CZVisitorView = CZVisitorView.visitorView()
     
     // MARK: - 默认为未登录状态
-    var isLogin : Bool = false
+    var isLogin : Bool = CZUserAccountViewModel.shareInstance.isLogin
     
     // MARK: - 系统回调函数,判断加载哪个界面
     override func loadView() {
+        
+        
+        // 判断要加载哪个view
         isLogin ? super.loadView() : setupVisitorView()
     }
     

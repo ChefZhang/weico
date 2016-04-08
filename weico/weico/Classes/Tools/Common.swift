@@ -9,6 +9,6 @@
 import Foundation
 
 // MARK:- 授权的常量
-let app_key = "2925907922"
-let app_secret = "875ea8e7c3d4f52a6526ad43fb598d5d"
+let app_key = "2976408685"
+let app_secret = "ee9b6ca7465b003dfcaa21d51a6395c7"
 let redirect_uri = "http://www.baidu.com"

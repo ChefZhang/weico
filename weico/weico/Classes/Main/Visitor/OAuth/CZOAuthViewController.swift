@@ -82,7 +82,7 @@ extension CZOAuthViewController: UIWebViewDelegate {
     }
     
     func webView(webView: UIWebView, didFailLoadWithError error: NSError?) {
-        SVProgressHUD.showErrorWithStatus("网络故障,请重试")
+        SVProgressHUD.dismiss()
     }
     
     
@@ -130,6 +130,7 @@ extension CZOAuthViewController {
             
             let account = CZUserAccountItem(dict: accountDict)
             
+            
             self.loadUserInfo(account)
 
         }
@@ -147,23 +148,29 @@ extension CZOAuthViewController {
         }
 
         // 3.发送网络请求
-        CZNetworkTools.shareInstance.loadUserInfo(accessToken, uid: uid) { (result, error) -> () in
-            // 1.错误校验
+        CZNetworkTools.shareInstance.loadUserInfomation(accessToken, uid: uid) { (result, error) -> () in
+            // 错误校验
             if error != nil {
                 print(error)
                 return
             }
             
-            // 2.拿到用户信息的结果
+            // 拿到用户信息的结果
             guard let userInfoDict = result else {
                 return
             }
             
-            // 3.从字典中取出昵称和用户头像地址
+            // 从字典中取出昵称和用户头像地址
             account.screen_name = userInfoDict["screen_name"] as? String
             account.avatar_large = userInfoDict["avatar_large"] as? String
             
-            print(account)
+//            print(account)
+            // 将对象保存
+            var path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).first!
+            path = (path as NSString) .stringByAppendingPathComponent("account.plist")
+            
+            // 归档
+            NSKeyedArchiver.archiveRootObject(account, toFile: path)
         }
     }
 }
