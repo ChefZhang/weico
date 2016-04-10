@@ -16,6 +16,7 @@ class CZHomeViewController: CZBaseViewController {
     private lazy var popoverAnimation: CZPopoverAnimation = CZPopoverAnimation {[weak self](presentedState) -> () in
         self?.titleBtn.selected = presentedState
     }
+    private lazy var statusViewModels: [CZStatusViewModel] = [CZStatusViewModel]()
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -100,13 +101,32 @@ extension CZHomeViewController {
             }
             
             for statusDict in resultArray {
-                print(statusDict)
+                let status = CZStatus(dict: statusDict)
+                let statusViewModel = CZStatusViewModel(status: status)
+                self.statusViewModels.append(statusViewModel)
+                
             }
+            
+            self.tableView.reloadData()
         }
     }
 }
 
-
+// MARK:- tableView的数据源方法
+extension CZHomeViewController {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statusViewModels.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("HomeCell")!
+        
+        let statusViewModel = statusViewModels[indexPath.row]
+        cell.textLabel?.text = statusViewModel.sourceText
+        
+        return cell
+    }
+}
 
 
 

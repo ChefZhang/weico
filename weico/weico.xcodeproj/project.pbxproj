@@ -22,6 +22,10 @@
 		52C543E41CB7F77300EB55BB /* CZUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543E01CB7F77300EB55BB /* CZUserAccountViewModel.swift */; };
 		52C543E81CB7F7D300EB55BB /* CZWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543E61CB7F7D300EB55BB /* CZWelcomeViewController.swift */; };
 		52C543E91CB7F7D300EB55BB /* CZWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C543E71CB7F7D300EB55BB /* CZWelcomeViewController.xib */; };
+		52C543EC1CB9EE4500EB55BB /* CZStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543EB1CB9EE4500EB55BB /* CZStatus.swift */; };
+		52C543EE1CB9FF4500EB55BB /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543ED1CB9FF4500EB55BB /* NSDate-Extension.swift */; };
+		52C543F01CBA023D00EB55BB /* CZUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543EF1CBA023D00EB55BB /* CZUser.swift */; };
+		52C543F21CBA311A00EB55BB /* CZStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543F11CBA311A00EB55BB /* CZStatusViewModel.swift */; };
 		52EA47B11CB3DC88005D6432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47AF1CB3DC88005D6432 /* Main.storyboard */; };
 		52EA47B31CB3DC93005D6432 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47B21CB3DC93005D6432 /* Home.storyboard */; };
 		52EA47B61CB3DCBE005D6432 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47B41CB3DCBE005D6432 /* Message.storyboard */; };
@@ -60,6 +64,10 @@
 		52C543E01CB7F77300EB55BB /* CZUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZUserAccountViewModel.swift; sourceTree = "<group>"; };
 		52C543E61CB7F7D300EB55BB /* CZWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZWelcomeViewController.swift; sourceTree = "<group>"; };
 		52C543E71CB7F7D300EB55BB /* CZWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CZWelcomeViewController.xib; sourceTree = "<group>"; };
+		52C543EB1CB9EE4500EB55BB /* CZStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZStatus.swift; sourceTree = "<group>"; };
+		52C543ED1CB9FF4500EB55BB /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		52C543EF1CBA023D00EB55BB /* CZUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZUser.swift; sourceTree = "<group>"; };
+		52C543F11CBA311A00EB55BB /* CZStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZStatusViewModel.swift; sourceTree = "<group>"; };
 		52EA47B01CB3DC88005D6432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52EA47B21CB3DC93005D6432 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		52EA47B51CB3DCBE005D6432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
@@ -156,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				52F830141CB521C500853660 /* Popover */,
+				52C543EA1CB9EE2E00EB55BB /* HomeModel */,
 				52EA47B21CB3DC93005D6432 /* Home.storyboard */,
 				526061461CAF9BD200CEA65A /* CZHomeViewController.swift */,
 			);
@@ -212,6 +221,16 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		52C543EA1CB9EE2E00EB55BB /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				52C543EB1CB9EE4500EB55BB /* CZStatus.swift */,
+				52C543EF1CBA023D00EB55BB /* CZUser.swift */,
+				52C543F11CBA311A00EB55BB /* CZStatusViewModel.swift */,
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
 		52EA47C21CB3E49E005D6432 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +245,7 @@
 		52EA47C31CB3E4B7005D6432 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				52C543ED1CB9FF4500EB55BB /* NSDate-Extension.swift */,
 				52EA47C41CB3E4D6005D6432 /* UIButton+Extension.swift */,
 				52F8300C1CB4E22200853660 /* UIBarButtonItem.swift */,
 			);
@@ -395,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C543E41CB7F77300EB55BB /* CZUserAccountViewModel.swift in Sources */,
+				52C543EC1CB9EE4500EB55BB /* CZStatus.swift in Sources */,
 				52C543E31CB7F77300EB55BB /* CZUserAccountItem.swift in Sources */,
 				5282B93B1CB6450300B738D7 /* Common.swift in Sources */,
 				526061451CAF9B5800CEA65A /* CZMainViewController.swift in Sources */,
@@ -403,9 +424,12 @@
 				5260612D1CAF99AB00CEA65A /* AppDelegate.swift in Sources */,
 				52F830171CB521F500853660 /* CZPopoverViewController.swift in Sources */,
 				526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */,
+				52C543F01CBA023D00EB55BB /* CZUser.swift in Sources */,
 				52F8301A1CB52DF500853660 /* CZPresentationController.swift in Sources */,
 				52F82FB21CB4030100853660 /* CZBaseViewController.swift in Sources */,
+				52C543EE1CB9FF4500EB55BB /* NSDate-Extension.swift in Sources */,
 				5260614B1CAF9BE500CEA65A /* CZDiscoverViewController.swift in Sources */,
+				52C543F21CBA311A00EB55BB /* CZStatusViewModel.swift in Sources */,
 				52F8300F1CB4EF8400853660 /* CZTitleButton.swift in Sources */,
 				52C543E11CB7F77300EB55BB /* CZOAuthViewController.swift in Sources */,
 				52F8301C1CB5683100853660 /* CZPopoverAnimation.swift in Sources */,
