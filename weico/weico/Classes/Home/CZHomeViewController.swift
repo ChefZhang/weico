@@ -29,6 +29,7 @@ class CZHomeViewController: CZBaseViewController {
         
         setupNavigationBar()
         
+        loadNewData()
     }
 
     
@@ -85,7 +86,25 @@ extension CZHomeViewController {
     }
 }
 
-
+// MARK: - 请求数据
+extension CZHomeViewController {
+    private func loadNewData() {
+        CZNetworkTools.shareInstance.loadNewData { (result, error) -> () in
+            if error != nil {
+                CZLog(error)
+                return
+            }
+            
+            guard let resultArray = result else {
+                return
+            }
+            
+            for statusDict in resultArray {
+                print(statusDict)
+            }
+        }
+    }
+}
 
 
 
