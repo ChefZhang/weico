@@ -21,6 +21,10 @@ class CZStatusViewModel: NSObject {
     var verifiedImage : UIImage?
     /// 处理用户会员等级
     var vipImage : UIImage?
+    /// 处理用户头像的地址
+    var profileURL : NSURL?
+    /// 处理微博配图的数据
+    var picURLs : [NSURL] = [NSURL]()
     
     init(status: CZStatus) {
         self.status = status
@@ -56,5 +60,20 @@ class CZStatusViewModel: NSObject {
         if mbrank > 0 && mbrank <= 6 {
             vipImage = UIImage(named: "common_icon_membership_level\(mbrank)")
         }
+        
+        // 处理用户头像
+        let profileURLString = status.user?.profile_image_url ?? ""
+        profileURL = NSURL(string: profileURLString)
+        
+        // 处理配图数据
+        if let picURLDicts = status.pic_urls {
+            for picURLDict in picURLDicts {
+                guard let picURLString = picURLDict["thumbnail_pic"] else {
+                    continue
+                }
+                picURLs.append(NSURL(string: picURLString)!)
+            }
+        }
+
     }
 }

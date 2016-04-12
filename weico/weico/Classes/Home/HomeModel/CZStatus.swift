@@ -20,11 +20,9 @@ class CZStatus: NSObject {
     var mid : Int = 0
     /// 用户模型
     var user: CZUser?
+    /// 微博的配图
+    var pic_urls : [[String : String]]?
     
-
-    // MARK: - 对数据处理的属性
-    var sourceText : String?
-    var createAtText : String?
     
     
     init(dict : [String : AnyObject]) {

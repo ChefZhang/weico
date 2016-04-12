@@ -31,6 +31,11 @@ class CZHomeViewController: CZBaseViewController {
         setupNavigationBar()
         
         loadNewData()
+        
+        
+        // MARK: - 这么写的话,就不需要用传统的计算每个控件的高度了,两句话都一定要
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 200
     }
 
     
@@ -119,10 +124,9 @@ extension CZHomeViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("HomeCell")!
+        let cell = tableView.dequeueReusableCellWithIdentifier("HomeCell") as! CZHomeTableViewCell
         
-        let statusViewModel = statusViewModels[indexPath.row]
-        cell.textLabel?.text = statusViewModel.sourceText
+        cell.statusViewModel = statusViewModels[indexPath.row]
         
         return cell
     }
