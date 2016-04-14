@@ -16,7 +16,7 @@ class CZHomeViewController: CZBaseViewController {
     private lazy var popoverAnimation: CZPopoverAnimation = CZPopoverAnimation {[weak self](presentedState) -> () in
         self?.titleBtn.selected = presentedState
     }
-    private lazy var statusViewModels: [CZStatusViewModel] = [CZStatusViewModel]()
+    private lazy var statusViewModels : [CZStatusViewModel] = [CZStatusViewModel]()
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {

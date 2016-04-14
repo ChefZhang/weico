@@ -27,6 +27,7 @@
 		52C543F01CBA023D00EB55BB /* CZUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543EF1CBA023D00EB55BB /* CZUser.swift */; };
 		52C543F21CBA311A00EB55BB /* CZStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543F11CBA311A00EB55BB /* CZStatusViewModel.swift */; };
 		52C543F41CBA364B00EB55BB /* CZHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C543F31CBA364B00EB55BB /* CZHomeTableViewCell.swift */; };
+		52D862751CBF36E40080F8FA /* CZPicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D862741CBF36E40080F8FA /* CZPicCollectionView.swift */; };
 		52EA47B11CB3DC88005D6432 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47AF1CB3DC88005D6432 /* Main.storyboard */; };
 		52EA47B31CB3DC93005D6432 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47B21CB3DC93005D6432 /* Home.storyboard */; };
 		52EA47B61CB3DCBE005D6432 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EA47B41CB3DCBE005D6432 /* Message.storyboard */; };
@@ -70,6 +71,7 @@
 		52C543EF1CBA023D00EB55BB /* CZUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZUser.swift; sourceTree = "<group>"; };
 		52C543F11CBA311A00EB55BB /* CZStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZStatusViewModel.swift; sourceTree = "<group>"; };
 		52C543F31CBA364B00EB55BB /* CZHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZHomeTableViewCell.swift; sourceTree = "<group>"; };
+		52D862741CBF36E40080F8FA /* CZPicCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZPicCollectionView.swift; sourceTree = "<group>"; };
 		52EA47B01CB3DC88005D6432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52EA47B21CB3DC93005D6432 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		52EA47B51CB3DCBE005D6432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				52EA47B21CB3DC93005D6432 /* Home.storyboard */,
 				526061461CAF9BD200CEA65A /* CZHomeViewController.swift */,
 				52C543F31CBA364B00EB55BB /* CZHomeTableViewCell.swift */,
+				52D862741CBF36E40080F8FA /* CZPicCollectionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				526061451CAF9B5800CEA65A /* CZMainViewController.swift in Sources */,
 				52C543E81CB7F7D300EB55BB /* CZWelcomeViewController.swift in Sources */,
 				526061491CAF9BDC00CEA65A /* CZMessageViewController.swift in Sources */,
+				52D862751CBF36E40080F8FA /* CZPicCollectionView.swift in Sources */,
 				5260612D1CAF99AB00CEA65A /* AppDelegate.swift in Sources */,
 				52F830171CB521F500853660 /* CZPopoverViewController.swift in Sources */,
 				526061471CAF9BD200CEA65A /* CZHomeViewController.swift in Sources */,
