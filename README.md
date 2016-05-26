@@ -2,9 +2,8 @@
 swift weibo
 
 
+iOS9推出了storyboard reference
 
-
-有些不少歪果仁团队,会用storyboard创建视图,国内会有不少人觉得不好用,觉得层次不够清晰,那么,就用实际效果看看如何吧
 
 **注意:只有iOS9.0开始才有storyboard的这种引用**
 
