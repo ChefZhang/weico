@@ -53,7 +53,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杀人放火好时节" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhQ-U6-bDE" userLabel="微博正文">
-                                            <rect key="frame" x="15" y="65" width="200" height="122"/>
+                                            <rect key="frame" x="15" y="65" width="200" height="90"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="l6q-KX-iJn"/>
                                             </constraints>
@@ -178,6 +178,12 @@
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="强奸未遂不得志" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S19-HL-btD" userLabel="微博正文">
+                                            <rect key="frame" x="15" y="170" width="200" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="vhQ-U6-bDE" firstAttribute="top" secondItem="jhu-Uh-oeH" secondAttribute="bottom" constant="15" id="5qB-LN-yDj"/>
@@ -191,19 +197,24 @@
                                         <constraint firstItem="HFg-a7-T3d" firstAttribute="top" secondItem="ndh-9S-enM" secondAttribute="top" constant="10" id="GFN-fD-5KB"/>
                                         <constraint firstItem="0Nl-fN-yhK" firstAttribute="leading" secondItem="ndh-9S-enM" secondAttribute="leading" id="Qh0-uG-UeA"/>
                                         <constraint firstItem="HFg-a7-T3d" firstAttribute="leading" secondItem="ndh-9S-enM" secondAttribute="leading" constant="15" id="RiZ-Y6-fHz"/>
+                                        <constraint firstItem="S19-HL-btD" firstAttribute="top" secondItem="vhQ-U6-bDE" secondAttribute="bottom" constant="15" id="TQ2-6U-GcV"/>
                                         <constraint firstItem="jU3-iu-zfc" firstAttribute="centerY" secondItem="aq9-Cz-gek" secondAttribute="centerY" id="TeW-ah-tXB"/>
                                         <constraint firstItem="cxG-Db-gqi" firstAttribute="leading" secondItem="HFg-a7-T3d" secondAttribute="leading" id="Tjt-YT-mI2"/>
+                                        <constraint firstItem="S19-HL-btD" firstAttribute="leading" secondItem="HFg-a7-T3d" secondAttribute="leading" id="ajp-zQ-iai"/>
                                         <constraint firstItem="cxG-Db-gqi" firstAttribute="top" secondItem="vhQ-U6-bDE" secondAttribute="bottom" priority="900" constant="10" id="bfW-m2-IS3"/>
                                         <constraint firstAttribute="bottom" secondItem="0Nl-fN-yhK" secondAttribute="bottom" id="cOF-aY-HES"/>
+                                        <constraint firstItem="cxG-Db-gqi" firstAttribute="top" secondItem="S19-HL-btD" secondAttribute="bottom" constant="10" id="dRq-r3-jTh"/>
                                         <constraint firstItem="aq9-Cz-gek" firstAttribute="bottom" secondItem="HFg-a7-T3d" secondAttribute="bottom" id="f28-B8-qpF"/>
                                         <constraint firstItem="jhu-Uh-oeH" firstAttribute="bottom" secondItem="HFg-a7-T3d" secondAttribute="bottom" id="gJG-5U-uat"/>
                                         <constraint firstItem="jhu-Uh-oeH" firstAttribute="trailing" secondItem="HFg-a7-T3d" secondAttribute="trailing" id="iHa-Zr-iiS"/>
+                                        <constraint firstItem="S19-HL-btD" firstAttribute="width" secondItem="vhQ-U6-bDE" secondAttribute="width" id="pdZ-Ys-SwC"/>
                                         <constraint firstItem="vhQ-U6-bDE" firstAttribute="leading" secondItem="HFg-a7-T3d" secondAttribute="leading" id="rwX-qg-JR7"/>
                                         <constraint firstItem="aJx-oH-Rj3" firstAttribute="leading" secondItem="yDZ-L7-snq" secondAttribute="trailing" constant="8" id="vQs-DM-jp6"/>
                                         <constraint firstItem="aJx-oH-Rj3" firstAttribute="centerY" secondItem="yDZ-L7-snq" secondAttribute="centerY" id="w3e-u1-R94"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
+                                            <exclude reference="bfW-m2-IS3"/>
                                             <exclude reference="7PH-tQ-Ypu"/>
                                         </mask>
                                     </variation>
@@ -215,6 +226,7 @@
                                     <outlet property="picView" destination="cxG-Db-gqi" id="ix2-v3-w8F"/>
                                     <outlet property="picViewHCons" destination="Z7o-b7-Q7V" id="0e6-qv-f2U"/>
                                     <outlet property="picViewWCons" destination="CL1-QI-LuQ" id="f3F-ap-MI6"/>
+                                    <outlet property="retweetedContentLabel" destination="S19-HL-btD" id="bor-4r-hkt"/>
                                     <outlet property="screenNameLabel" destination="yDZ-L7-snq" id="7V1-jc-QDY"/>
                                     <outlet property="sourceLabel" destination="jU3-iu-zfc" id="6am-HR-gbp"/>
                                     <outlet property="timeLabel" destination="aq9-Cz-gek" id="6Nl-Cr-2Ud"/>

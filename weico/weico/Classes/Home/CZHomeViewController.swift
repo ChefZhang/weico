@@ -8,6 +8,8 @@
 
 import UIKit
 
+import SDWebImage
+
 class CZHomeViewController: CZBaseViewController {
 
     
@@ -112,8 +114,29 @@ extension CZHomeViewController {
                 
             }
             
+            // 缓存图片
+            self.cacheImages(self.statusViewModels)
+        }
+    }
+    
+    private func cacheImages(viewModels: [CZStatusViewModel]) {
+        let group = dispatch_group_create()
+        
+        // 1.缓存图片
+        for viewmodel in viewModels {
+            for picURL in viewmodel.picURLs {
+                dispatch_group_enter(group)
+                SDWebImageManager.sharedManager().downloadImageWithURL(picURL, options: [], progress: nil, completed: { (_, _, _, _, _) -> Void in
+                    dispatch_group_leave(group)
+                })
+            }
+        }
+        
+        // 2.刷新表格
+        dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
             self.tableView.reloadData()
         }
+
     }
 }
 

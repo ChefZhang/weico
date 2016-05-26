@@ -22,6 +22,8 @@ class CZStatus: NSObject {
     var user: CZUser?
     /// 微博的配图
     var pic_urls : [[String : String]]?
+    /// 转发
+    var retweeted_status: CZStatus?
     
     
     
@@ -34,6 +36,11 @@ class CZStatus: NSObject {
         if let userDict = dict["user"] as? [String : AnyObject] {
             user = CZUser(dict: userDict)
         }
+        
+        if let retweetedStatusDict = dict["retweeted_status"] as? [String : AnyObject] {
+            retweeted_status = CZStatus(dict: retweetedStatusDict)
+        }
+        
     }
     override func setValue(value: AnyObject?, forUndefinedKey key: String) {}
 
